@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умножение матриц</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <div class="text title">Сложение матриц</div>
+        <div class="main__input-data input-data">
+            <div class="text input-data__advise">Выберите необходимый размер
+                матриц:</div>
+            <div class="text input-data__A">A
+                <select class='sizes sizes-A-rows'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                х
+                <select class='sizes sizes-A-cols'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+
+            <div class="text input-data__B">B
+                <select class='sizes sizes-B-rows'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                х
+                <select class='sizes sizes-B-cols'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="choose-block text">Выберите действие
+            <select class='select choose-option '>
+                <option value="+">Сложить</option>
+                <option value="-">Вычесть</option>
+                <option value="*">Умножить</option>
+            </select>
+        </div>
+        <!-- <div class="text A-data__title">Введите значения матриц</div> -->
+        <div class="main__A-data A-data table">
+            <div class=text>Первая Матрица</div>
+            <table class='matrix matrix-A'>
+                <tbody class='matrix-A-body'>
+                    <tr>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="main__B-data B-data table left-table">
+            <div class="text">Вторая Матрица</div>
+            <table class="matrix matrix-B">
+                <tbody class='matrix-B-body'>
+                    <tr>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                        <td><input type="text" class='cell'></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class='button-block'><span class='text'>A + B</span>
+            <button class='text answer-btn'>=</button>
+        </div>
+        <div class="answer-block"><span class='text'>Ответ:</span><br/>
+            <table class="answer-table">
+                <tbody class="answer-table-body">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
